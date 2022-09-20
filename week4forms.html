@@ -8,14 +8,18 @@
     <title>Forms Example</title>
 </head>
 
-
 <body>
     <h1>Food Order Form</h1> 
     <form method="post" action="">
         <label for="fullname">Name:</label>
-        <input type="text" id="fullname" name="fullname">
+        <input type="text" id="fullname" name="fullname"> <br>
         <label for="specialinstructions">Special Instructions</label>
         <textarea id="specialinstructions" name="specialinstructions"  cols="30" rows="10"></textarea>
+        <label for="delivery">delivery</label>
+        <input type="radio" id="delivery" name="deliverypickup" value="delivery">
+        <label for="pickup">pickup</label>
+        <input type="radio" id="pickup" name="deliverypickup" value="pickup"> <br>
+        <input type="submit" value="send my form">
 
     </form>
 </body>
