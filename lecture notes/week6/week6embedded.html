@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 Embedded</title>
+    <!-- this is an embedded style sheet-->
+    <style>
+        p,h1 {
+            color:royalblue;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: .90em; /* 1.5em means 150%, .90em means 90% */
+        font-weight:900;
+        }
+
+        /* descendant selectors pick an element inside another element */
+        p a {
+            color: orange
+        }
+       /*only id selectors get the #sign when css'ing them*/
+       /* */
+        #firstbullet {
+            color:chocolate;
+        }
+        .pinktext {
+            color:pink;
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+    <h1 class="pinktext">Week 6 CSS</h1>
+    <p>Lorem <a href="http://www.ebay.com">ipsum</a> dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat</p>
+<ul>
+    <li><a href="http://www.amazon.com" id="firstbullet" >Amazon</a></li>
+    <li><a href="http://www.google.com" id="pinktext" >Google</a></li>
+</ul>
+
+</body>
+
+
+
+</html>
