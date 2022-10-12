@@ -1,0 +1,10 @@
+body {
+    background-image: url("../../images/strongotto.jpg")
+
+}
+
+p {
+    background-color: #d6d0d0 ;
+    border: 2px solid #00ff45;
+    padding: 15px;
+}
