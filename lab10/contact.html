@@ -1,0 +1,99 @@
+<!DocTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title> 
+        <link rel="stylesheet" href="../lab10/stylesheet.css">
+        <h1>Contact</h1>
+        <style>
+            h1 { color: #fcba12;
+            }
+            body {
+            background-color: #000000;
+            color: #000000;
+            }
+            .row1, .row2 {
+            display: flex;
+            margin: 50px;
+            border-radius: 1em;
+            padding: 10px;
+            background-color: #fcba12;
+            flex-wrap: wrap;
+            }
+            .map {
+            float:right;
+            margin: 50px;
+            }
+            .links {
+            float: right;
+            margin: 35px;
+            }
+            .form, .addy {
+            margin: 20px;
+            }
+            .navi {
+            padding: 10px ;flex: 2; order: 3; background-color: #fcba12; border-radius: 10em;
+            }
+            h2, h3, h4 {
+                color: #000000
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navi">
+            <a href="../lab10/index.html">Home</a> <span class="span">|</span>
+            <a href="../lab10/skills.html">Skills</a> <span class="spann">|</span>
+            <a href="../lab10/contact.html">Contact</a>
+        </nav>
+        
+        
+        <div class="row1">
+            <div class="addy"> 
+                <h2>Address:</h2> 
+                <strong>Dawryn Rosario</strong><br>
+                Syracuse University <br>
+                900 South Crouse Ave <br> 
+                Syracuse, NY 13244  <br>
+            </div>
+            
+            <div class="links">
+                <a href="mailto:darosari@syr.edu">darosari@syr.edu</a> <br>
+                <a href="https://www.linkedin.com/in/rosariodawryn/">
+                <img alt = "logo link" src = "../images/logo.png" alt= "logo"></a><br>
+            </div>
+        </div>
+        
+        <div class="row2">
+            <div class="form">
+                <h3>Leave me a message!</h3>
+                <form action="https://formspree.io/f/meqdggra" method="post">
+                    <label for="fullname">Full Name:</label> <br>
+                    <input type="text" id="fullname" name="fullname"> <br>
+         
+        
+                    <h4>On a scale of 1-3 , how would you rate this website? (3 = highest)</h4>
+                    <input type="radio" id="numone" name="user selected:" value="1">
+                    <label for="numone">1</label>
+                    <input type="radio" id="numtwo" name="user selected:" value="2">
+                    <label for="numtwo">2</label>
+                    <input type="radio" id = "numthree" name="user selected:" value="3">
+                    <label for="numthree">3</label>
+        
+                    <h5>Website Recommendations!!</h5>
+                    <textarea id="user's comment:" name="user's comment"  cols="30" rows="10"></textarea> <br>
+                    <label for="user's comment:">Please leave a suggestion for this website in the text area above.</label>
+        
+                    <h6>Submit form</h6>
+                    <input type="submit" value="submit">
+               </form>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46663.67706714311!2d-76.15899428510524!3d43.031335111636004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3682f81fc95%3A0xdde8fcc1640a4876!2sSyracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1663258057693!5m2!1sen!2sus" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </body>
+    
+</html>
