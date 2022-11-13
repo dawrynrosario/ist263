@@ -3,7 +3,7 @@ body {
     color: #fcba12
 }
 
-p {color: #fcba12}
+
 
 h1,h2, h3, h4 {color: #fcba12}
 
@@ -41,6 +41,9 @@ a {color: #000000;}
     .span, .spann {
         display: none;
     }
+}
+.row2 {
+    color:#000000;
 }
 
 
