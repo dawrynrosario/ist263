@@ -1,0 +1,46 @@
+body {
+    background-color: #000000;
+    color: #fcba12
+}
+
+p {color: #fcba12}
+
+h1,h2, h3, h4 {color: #fcba12}
+
+head {color: #fcba12}
+
+a:hover {color: #ffffff}
+
+iframe {background-color: #fcba12}
+
+nav {
+    color: #000000;
+    background-color: #fcba12;
+    padding: 10px;
+    border: solid #ffffff;
+    margin-bottom: 30px
+}
+
+nav a {color: #000000}
+
+nav a:hover {background-color: #454545}
+
+.special {
+    background-color: #ffffff;
+}
+.navi {
+    padding: 10px ;flex: 2; order: 3; background-color: #fcba12; border-radius: 10em;
+}
+a {color: #000000;}
+@media only screen and (max-width: 768px) {
+    nav a {
+        display: block;
+        size-adjust: 100%;
+        padding: 10px;
+    }
+    .span, .spann {
+        display: none;
+    }
+}
+
+
