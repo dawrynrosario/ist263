@@ -8,7 +8,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="skeleton-ss.css">
     <title>Black Lives Matter </title>
-
+    <style>
+    body {
+        background-color: #000000;
+        color: #ffffff;
+        background-image:;
+        }
+    .navi {
+        float: right;
+        padding: 10px ;
+        flex: 1;
+        order: 1;
+        background-color: #ffffff;
+        border: #000000;
+        border-radius: 10em;
+        color: #ffffff;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        }
+    nav a:hover {
+        background-color: #C0C0C0 ;
+        }
+    nav a:visited {
+        color: #000000;
+    }
+    .flex1 , .flex2 {
+        margin: 100px;
+        display: flex;
+        flex: 1;
+        border-radius: 10em;
+        border: #000000;
+        padding: 10px;
+        background-color: #000000;
+        color: #ffffff;
+        flex-wrap: wrap;
+        }
+        
+    .image {
+        float: left;
+        padding: 10px;
+        max-width: 100%;
+        }
+    .row1, .row2 {
+        display: flex;
+        margin: 50px;
+        border-radius: 1em;
+        padding: 10px;
+        background-color: #fcba12;
+        flex-wrap: wrap;
+    }
+    .quote {
+        float: right;
+    }
+    .tm {
+        float: left;
+    }
+    .f1r1, .f1r2 {
+        flex: 1;
+        font-family:cursive ;
+    }
+    
+    .f2r1, .f2r2 {
+        flex: 1
+    }
+    .dawryn {
+        font-size:50px;
+        color:#ffffff;
+        text-decoration: none;
+        font-family: cursive;
+        margin: 15%;
+    }
+    h3 {
+        text-align: center;
+        font-family: cursive;
+    }
+    .flex2 div p {
+        font-family: cursive;
+        font-size: 1em;;
+    }
+    @media only screen and (max-width: 600px) {
+    }
+    </style>
 </head>
 
 
@@ -19,50 +99,51 @@
         <a href="../projectHTML/mbm.html">More About Me</a>
     </nav>
     
-    <h1>Home Page</h1>
+    <a class="dawryn" href="../projectHTML/skeleton.html">Dawryn Rosario </a>
 
     <div class="flex1">
-
-        <div class="row1">
-            <img class="image" src="../../images/263.png" width= "1024" height= "400" alt="image">
+        <div class="f1r1">
+            <img class="image" src="../../images/photoshop450x600.jpg" width= "450" height= "500" alt="image">
         </div>
 
-        <div class="row2"> 
+        <div class="f1r2"> 
             <h2> Who is Dawryn?</h2>
-            <p>I am currently a college student at Syracuse University majoring in Informational Management & Technology. I was born and raised in the Bronx, New York and I am from the Dominican Republic.
-                My experience at Syracuse University so far has been delightful. I have been blessed to learn from very insightful professors and take away real life skills, as well as practice and new techniques to sharpen my skillset. I am so grateful for my network of friends and family because I wouldn’t be in this position today without them. Please feel free to navigate through my website, I hope you enjoy it !!
-                I have experience with various tech platforms like Microsoft Excel and Google sheets, along with a growing passion in coding in different programming and markup languages like Python and HTML. While I got you here, be sure to say get in touch and say hi or connect with me on LinkedIn, especially if you love tech !!!
-            </p>
+            <p> I am currently a college student at Syracuse University majoring in Informational Management & Technology. I was born and raised in the Bronx, New York and I am from the Dominican Republic. </p> <br>
+            <p> My experience at Syracuse University so far has been delightful. I have been blessed to learn from very insightful professors and take away real life skills, as well as practice and new techniques to sharpen my skillset. I am so grateful for my network of friends and family because I wouldn’t be in this position today without them. </p> <br>
+            <p> Please feel free to navigate through my website, I hope you enjoy it !! I have experience with various tech platforms like Microsoft Excel and Google sheets, along with a growing passion in coding in different programming and markup languages like Python and HTML. While I got you here, be sure to say get in touch and say hi or connect with me on LinkedIn, especially if you love tech !!!</p> <br>
         </div>
-
     </div>
-        <h3>Me in action!!!</h3>
+    
+    <h3>Me in action!!! Click on an image to see more from that day.</h3>
+    
+    <div>
         <div class="flex2">
+            <div class="f2r1">
+                <a href="../../projectdeliverables/projectHTML/portlandpictures.html"><img class="ncore" src="../../images/me ncore.jpg" alt="ncore" width="300" height="400"></a>
+                <p>When I represented Syracuse University and our HEOP program <br>at the annual NCORE conference in Portland, Oregon. </p>
+            </div>
 
-        <div class="row1">
-            <img class="ncore" src="../../images/me ncore.jpg" alt="ncore" width="300" height="300">
-            <p>Me representing Syracuse HEOP in Portland</p>
+            <div class="f2r2">
+                <a href="../../projectdeliverables/projectHTML/graduationpictures.html"><img class="family" src="../../images/Family.jpg" alt="family" width="300" height="400"></a>
+                <p>When I was blessed to have had both of my older siblings graduate from <br> their under/post institutions this past summer. </p>
+            </div>
+
+            <div class="f2r3"> 
+                <a href="../projectHTML/asupictures.html"><img class="ball" src="../../images/basketball.jpg" alt="basketball" width="300" height="400"></a>
+                <p>In September of 2022,  my team won ASU's annual 5v5 Basketball Tournament.</p>
+        
+            </div>
         </div>
-
-        <div class="row2">
-            <img class="family" src="../../images/Family.jpg" alt="family" width="300" height="300">
-            <p>Me with my family after graduation</p>
-        </div>
-
-        <div class="row3"> 
-            <img class="ball" src="../../images/basketball.jpg" alt="basketball" width="300" height="300">
-            <p>Me with my team after winning ASU's annual 5v5 Basketball Tournament</p>
-        </div>
-
     </div>
-</body>
+
 
 <footer> 
     <hr>
     <p class="tm">&copy; 2022</p>
-    <p class="quote"> "You can keep going or you can quit. Either way hurts, it is up to you to choose which type of hurt you want to face." -Anonymous</p>
-</footer>
-<h4> <strong>CONTACT</strong></h4>
+    <p class="quote"> "You can keep going or you can quit. Either way hurts, it is up to you to choose which type of hurt you want to face."</p>
+
+
+
 <div class="row1">
     <div class="addy"> 
         <h2>Address:</h2> 
@@ -70,42 +151,17 @@
         Syracuse University <br>
         900 South Crouse Ave <br> 
         Syracuse, NY 13244  <br>
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46663.67706714311!2d-76.15899428510524!3d43.031335111636004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3682f81fc95%3A0xdde8fcc1640a4876!2sSyracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1663258057693!5m2!1sen!2sus" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     
     <div class="links">
-        <a href="mailto:darosari@syr.edu"> Dawryn Rosario's Email</a> <br> <br> <br>
-        <a href="https://www.linkedin.com/in/rosariodawryn/">
-        <img alt="logo link" src="../../images/logo.png"></a><br> <br> <br>
+        <a href="mailto:darosari@syr.edu"> <img width="70" src="../../images/download.jpeg" alt="gmail logo"></a> <br> <br> <br>
+        <a href="https://www.linkedin.com/in/rosariodawryn/"><img alt="linked in logo" src="../../images/logo.png"></a><br> <br> <br>
+        
     </div>
 </div>
 
-<div class="flex3">
-    <div class="row1">
-        <h3>Leave me a message!</h3>
-        <form action="https://formspree.io/f/meqdggra" method="post">
-            <label for="fullname">Full Name:</label> <br>
-            <input type="text" id="fullname" name="fullname"> <br>
-    </div>
 
-    <div class="row2">
-            <h5>On a scale of 1-3 , how would you rate this website? (3 = highest)</h5>
-            <input type="radio" id="numone" name="user selected:" value="1">
-            <label for="numone">1</label>
-            <input type="radio" id="numtwo" name="user selected:" value="2">
-            <label for="numtwo">2</label>
-            <input type="radio" id = "numthree" name="user selected:" value="3">
-            <label for="numthree">3</label>
-    </div class="row3">
-
-            <h6>Website Recommendations!!</h6>
-            <textarea id="user'scomment:" name="user'scomment"  cols="30" rows="10"></textarea> <br>
-            <label for="user'scomment:">Please leave a suggestion for this website in the text area above.</label>
-
-            <h7>Submit form</h7>
-            <input type="submit" value="submit">
-        </form>
-    </div>
-</div>
+</footer>
+</body>
 
 </html>
