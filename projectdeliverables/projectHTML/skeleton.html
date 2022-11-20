@@ -29,7 +29,7 @@
     } /*to style the navigation bar*/
 
     nav a:visited { 
-        color: #5d0364;
+        color: #000000;
     } /*to style link color text after user has clicked it*/
 
     nav a:hover {
@@ -45,7 +45,7 @@
         border-radius: 10em;
         border: 10px solid #000000;
         padding: 10px;
-        background-color: #141313;
+        background-color: #0b0b0b;
         color: #ffffff;
         flex-wrap: wrap;
     } /*to style both overall divs*/
@@ -85,13 +85,6 @@
         max-width: 100%;
     } /*to make all of my images on my page flexible (for responsive design)*/
 
-    .quote {
-        float: right;
-    }
-    .tm {
-        float: left;
-    }
-
     .image {
         float: left;
         padding: 10px;
@@ -118,17 +111,28 @@
         font-family: cursive;
         font-size: 1em;;
     } 
-    .foot {
+
+    .quote {
+        float: right;
+    }
+    .tm {
+        float: left;
+    }
+    
+    .linkbox {
         display: flex;
         margin: 50px;
         border-radius: 1em;
         padding: 10px;
-        background-color: #ffffff;
+        background-color: #0b0b0b;
         color: #000000;
         flex-wrap: wrap;
     }
     .addy, .links {
-        flex:1;
+        flex: 1
+    }
+    .links {
+        float:left;
     }
     .button1 {
         border: none;
@@ -153,6 +157,14 @@
             flex-wrap: wrap;
             max-width: 100%;
             height: auto;
+        }
+        nav a {
+            display: block;
+            size-adjust: 100%;
+            padding: 10px;
+        }
+        .span, .spann {
+            display: none;
         }
     }
     </style>
@@ -208,26 +220,25 @@
         </div>
     </div>
 
+    <div class="linkbox"> 
+
+        <div class="addy"> 
+            <a href="../../lab11/contact.html" button class="button1" type="button">Get In Touch!</button> </a> 
+        </div>
+
+        <div class="links">
+            <a href="mailto:darosari@syr.edu"> <img width="70" src="../../images/download.jpeg" alt="gmail logo"></a> <br> <br> <br>
+            <a href="https://www.linkedin.com/in/rosariodawryn/"><img alt="linked in logo" src="../../images/logo.png"></a><br> <br> <br>
+        </div>
+
+    </div>
+
 <footer> 
     <hr>
-    <p class="tm">&copy; 2022</p>
-    <p class="quote"> "You can keep going or you can quit. Either way hurts, it is up to you to choose which type of hurt you want to face."</p>
-
-
-
-<div class="foot">
-    <div class="addy"> 
-        <a href="../../lab11/contact.html" button class="button1" type="button">Get In Touch!</button> </a> 
-    </div>
-    
-    <div class="links">
-        <a href="mailto:darosari@syr.edu"> <img width="70" src="../../images/download.jpeg" alt="gmail logo"></a> <br> <br> <br>
-        <a href="https://www.linkedin.com/in/rosariodawryn/"><img alt="linked in logo" src="../../images/logo.png"></a><br> <br> <br>
-        
-    </div>
-</div>
-
-
+        <div class="quotetm">
+            <div class="tm"> <p>&copy; 2022</p></div>
+            <div class="quote"> <p> "You can keep going or you can quit. Either way hurts, it is up to you to choose which type of hurt you want to face."</p></div>
+        </div>
 </footer>
 </body>
 
