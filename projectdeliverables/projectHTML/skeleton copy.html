@@ -9,43 +9,86 @@
     <link rel="stylesheet" href="skeleton-sscopy.css">
     <title>Black Lives Matter </title>
     <style> 
-    body {
+     body {
         background-color: #000000;
-    }
+        color: #ffffff;
+        } /*to make whole website's background black, and put any text in the body as white*/
+    
     .navi {
-        padding: 10px ;
+        float: right;
+        padding: 20px ;
         flex: 1;
         order: 1;
-        background-color: #fcba12;
+        background-color: #ffffff;
         border: #000000;
         border-radius: 10em;
         color: #ffffff;
-    }
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 1%;
+        } /*to style the navigation bar*/
+
+    nav a:visited { 
+        color: #000000;
+    } /*to style link color text after user has clicked it*/
+
     nav a:hover {
-        background-color: #ffffff ;
-    }
-     .flex1 {
-        margin: 50px;
+        background-color: #C0C0C0 ;
+    } /*to style hover when user hovers over a clickable link*/
+
+    .flex1 , .flex2 {
+        margin: 100px;
         display: flex;
         flex: 1;
         border-radius: 10em;
         border: #000000;
         padding: 10px;
-        background-color: #fcba12 ;
+        background-color: #ffffff;
         color: #ffffff;
-     }
-     .flex1text {
+        flex-wrap: wrap;
+    } /*to style both overall divs*/
+   
+    .row1, .row2 { 
+        display: flex;
+        margin: 50px;
+        border-radius: 1em;
+        padding: 10px;
+        background-color: #000000;
+        flex-wrap: wrap;
+        flex: 1;
+        font-family: cursive;
+    } /*to style rows inside first flexbox*/
+
+    .dawryn {
+        font-size:50px;
+        color:#ffffff;
+        text-decoration: none;
+        font-family: cursive;
+        margin: 15%;
+    } /*to style my name at the top of the page*/
+
+    .f2r1, .f2r2, .f2r3 {
+        display: flex;
+        margin: 50px;
+        border-radius: 1em;
+        padding: 10px;
+        background-color: #000000;
+        flex-wrap: wrap;
+        flex: 1;
+        font-family: cursive;
+    } /*to style all 3 rows in second flexbox*/
+
+    .image, .ncore, .family, .ball {
+        max-width: 100%;
+    } /*to make all of my images on my page flexible (for responsive design)*/
+
+    .quote {
         float: right;
-     }
-     .image {
+    }
+    .tm {
         float: left;
-     }
-     .row1 {
-        padding-right: 50px;
-     }
-     .who {
-        justify-content: center;
-     }
+    }
+
     </style>
 </head>
 
@@ -57,37 +100,36 @@
         <a href="../projectHTML/mbm.html">More About Me</a>
     </nav>
     
-    <h1>Home Page</h1>
+    <a class="dawryn" href="../projectHTML/skeleton.html">Dawryn Rosario </a>
 
     <div class="flex1">
 
         <div class="row1">
-            <img class="image" src="../../images/me ncore.jpg" width= "400" height= "400" alt="image">
+            <img class="image" src="../../images/photoshop450x600.jpg" width= "450" height= "500" alt="image">
         </div>
 
         <div class="row2"> 
-            <h2 class="who"> Who is Dawryn?</h2>
-            <p class="flex1text">I am currently a college student at Syracuse University majoring in Informational Management & Technology. I was born and raised in the Bronx, New York and I am from the Dominican Republic.
-                My experience at Syracuse University so far has been delightful. I have been blessed to learn from very insightful professors and take away real life skills, as well as practice and new techniques to sharpen my skillset. I am so grateful for my network of friends and family because I wouldn’t be in this position today without them. Please feel free to navigate through my website, I hope you enjoy it !!
-                I have experience with various tech platforms like Microsoft Excel and Google sheets, along with a growing passion in coding in different programming and markup languages like Python and HTML. While I got you here, be sure to say get in touch and say hi or connect with me on LinkedIn, especially if you love tech !!!
-            </p>
+            <h2> Who is Dawryn?</h2>
+            <p> I am currently a college student at Syracuse University majoring in Informational Management & Technology. I was born and raised in the Bronx, New York and I am from the Dominican Republic. </p> <br>
+            <p> My experience at Syracuse University so far has been delightful. I have been blessed to learn from very insightful professors and take away real life skills, as well as practice and new techniques to sharpen my skillset. I am so grateful for my network of friends and family because I wouldn’t be in this position today without them. </p> <br>
+            <p> Please feel free to navigate through my website, I hope you enjoy it !! I have experience with various tech platforms like Microsoft Excel and Google sheets, along with a growing passion in coding in different programming and markup languages like Python and HTML. While I got you here, be sure to say get in touch and say hi or connect with me on LinkedIn, especially if you love tech !!!</p> <br>
         </div>
 
     </div>
-        <h3>Me in action!!!</h3>
+        <h3>Me in action!!! Click on an image to see more from that day.</h3>
         <div class="flex2">
 
-        <div class="row1">
+        <div class="f2r1">
             <img class="ncore" src="../../images/me ncore.jpg" alt="ncore" width="300" height="300">
             <p>Me representing Syracuse HEOP in Portland</p>
         </div>
 
-        <div class="row2">
+        <div class="f2r2">
             <img class="family" src="../../images/Family.jpg" alt="family" width="300" height="300">
             <p>Me with my family after graduation</p>
         </div>
 
-        <div class="row3"> 
+        <div class="f2r3"> 
             <img class="ball" src="../../images/basketball.jpg" alt="basketball" width="300" height="300">
             <p>Me with my team after winning ASU's annual 5v5 Basketball Tournament</p>
         </div>
@@ -95,12 +137,13 @@
     </div>
 </body>
 
+
+
 <footer> 
     <hr>
     <p class="tm">&copy; 2022</p>
     <p class="quote"> "You can keep going or you can quit. Either way hurts, it is up to you to choose which type of hurt you want to face." -Anonymous</p>
-</footer>
-<h4> <strong>CONTACT</strong></h4>
+
 <div class="row1">
     <div class="addy"> 
         <h2>Address:</h2> 
