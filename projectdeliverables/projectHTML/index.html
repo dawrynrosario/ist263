@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="skeleton-sscopy.css">
+    <title>Black Lives Matter </title>
+    <style>
+    body {
+        background-color: #000000;
+        color: #ffffff;
+    } /*to make whole website's background black, and put any text in the body as white*/
+    
+    .navi {
+        float: right;
+        padding: 20px ;
+        flex: 1;
+        order: 1;
+        background-color: #ffffff;
+        border: 1em solid #000000;
+        border-radius: 10em;
+        color: #000000;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 1%;
+    } /*to style the navigation bar*/
+
+    .flex1 , .flex2 {
+        margin: 100px;
+        display: flex;
+        flex: 1;
+        border-radius: 10em;
+        border: 10px solid #000000;
+        padding: 10px;
+        background-color: #000000;
+        color: #ffffff;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        /* align-content: center; */
+
+    } /*to style both overall divs*/
+
+    .f1r1 { 
+        display: flex;
+        margin: 50px;
+        border-radius: 1em;
+        padding: 10px;
+        background-color: #000000;
+        flex-wrap: wrap;
+        flex: 2;
+        font-family: cursive;
+        color: #ffffff;
+        justify-content: center;
+        align-content: center;
+    } /*to style rows inside first flexbox*/
+
+
+
+    .f1r2 { 
+        display: flex;
+        margin: 50px;
+        border-radius: 1em;
+        padding: 10px;
+        background-color: #000000;
+        flex-wrap: wrap;
+        flex: 3;
+        font-family: cursive;
+        color: #ffffff;
+        padding: 2em;
+
+    } /*to style rows inside first flexbox*/
+
+    
+
+    .f2r2 { 
+        display: flex;
+        margin: 50px;
+        border-radius: 1em;
+        padding: 1px;
+        background-color: #000000;
+        flex-wrap: wrap;
+        flex: 1;
+        font-family: cursive;
+        color: #ffffff;
+    } /*to style rows inside first flexbox*/
+
+
+    #dawryn {
+        color:#ffffff;
+        text-decoration: none;
+        font-family: cursive;
+        margin: 15%;
+        font-size: 1em;
+    } /*to style my name at the top of the page*/
+
+    .f2r1, .f2r2, .f2r3 {
+        display: flex;
+        margin: 50px;
+        border-radius: 1em;
+        padding: 10px;
+        background-color: #000000;
+        flex-wrap: wrap;
+        flex: 1;
+        font-family: cursive;
+    } /*to style all 3 rows in second flexbox*/
+
+    /* .image {
+        margin: 1.5EM;
+        float: left;
+        padding: 10px;
+        } */
+
+    /* .f1r1, .f1r2 {
+        flex: 1;
+        font-family:cursive ;
+    } */
+   
+    h3 {
+        text-align: center;
+        font-family: cursive;
+    }
+    .flex2 div p {
+        font-family: cursive;
+        font-size: 1em;;
+    }     
+
+    .linkbox {
+        display: flex;
+        margin: 50px;
+        border-radius: 1em;
+        background-color: #000000;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    .gmail, .linkedin, .git {
+        padding: 10px;
+    }
+    
+    .button1 {
+        border: none;
+        color: #000000;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background-color: #C0C0C0;
+    }
+
+
+    /*to make all of my images on my page flexible (for responsive design)*/  
+    .ncore, .family, .ball {
+        max-width: 100%;  
+        border-radius: 15%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+        width: 100%;
+        max-width: 400px;
+        }
+
+        .image {
+        /* margin: 2EM; */
+        float: left;
+        padding: 2em;
+        object-fit: cover;
+        /* overflow: hidden; */
+        position: relative;
+        }
+
+        .image {
+        /* max-width: 100%;   */
+        border-radius: 15%;
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        /* height: auto; */
+        width: 100%;
+        max-width: 400px;
+        }        
+    
+
+    .f2r1, .f2r2 {flex: 1}
+    .quote {float: right;}
+    .tm {float: left;}
+    .h3 {text-align: center;}
+    nav a:link {color:#73006f;} /*to style links to unvisited pages*/
+    nav a:visited {color: #000000;} /*to style link color text after user has clicked it*/
+    nav a:hover {background-color: #eccaca ;} /*to style hover when user hovers over a clickable link*/
+    .span, .spann {color:#000000;} /*to style lines between homw, stacker, mbm*/
+
+    /* Style inputs, select elements and textareas */
+    input[type=text], select, textarea{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+    }
+
+    /* Style the label to display next to the inputs */
+    label{
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+    }
+
+    /* Style the submit button */
+    input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+
+    /* Style the container */
+    .container {
+        border-radius: 5px;
+        background-color: #000000;
+        padding: 20px;
+        color: #ffffff;
+        clear: both;
+    }
+
+    /* Floating column for labels: 25% width */
+    .labels {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+    }
+
+    /* Floating column for inputs: 75% width */
+    .inputs {
+        float: right;
+        width: 75%;
+        margin-top: 6px;
+    }
+
+    /* Clear floats after the columns */
+    .formrow1:after, .formrow2:after, .formrow3:after, .formrow4:after, .formrow5:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .formrow1, .formrow2, .formrow3, .formrow4, .formrow5 {
+        color: #ffffff;
+    }
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .labels, .inputs, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+        }
+        .row1, .row2 {
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .image, .ncore, .family, .ball {
+            border-radius: 50%;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: auto;
+            width: 100%;
+            max-width: 400px;
+        }
+        nav a {
+            display: block;
+            padding: 10px;
+        }
+        .navi {
+            background-color: #c1c1c18e;
+
+        }
+        body {
+        background-color:#c1c1c18e;
+        color:#ffffff;
+        }
+
+        p {color:#ffffff;}
+        .f1r1 {margin: 25px;}
+        /* .f1r2 {margin: 25px;} */
+        #dawryn, .h3, .quotetm p {color:#000000;}
+        .span, .spann {display: none;}
+        .links {float:left;}
+        .addy, .links {flex: 1}
+        #dawryn {font-size:1em;}
+    }
+
+    </style>
+</head>
+
+
+<body>
+    <nav class="navi">
+        <a href="../projectHTML/index.html">Home</a> <span class="span">|</span>
+        <a href="../projectHTML/stacker.html">Stacker</a> <span class="spann">|</span>
+        <a href="../projectHTML/mbm.html">More About Me</a>
+    </nav>
+    
+    <a id="dawryn" href="../projectHTML/index.html">Dawryn Rosario</a>
+
+    <div class="flex1">
+
+        <!-- <div class="f1r1">
+            <img class="image" src="../../images/photoshop450x600.jpg" width= "450" alt="image">
+        </div> -->
+
+        <img class="image" src="../../images/photoshop450x600.jpg" width= "450" alt="image">
+
+        <div class="f1r2"> 
+            <h2> Who is Dawryn?</h2>
+            <p> I am currently a college student at Syracuse University majoring in Informational Management & Technology. I was born and raised in the Bronx, New York and I am from the Dominican Republic. </p> <br>
+            <p> My experience at Syracuse University so far has been delightful. I have been blessed to learn from very insightful professors and take away real life skills, as well as practice and new techniques to sharpen my skillset. I am so grateful for my network of friends and family because I wouldn’t be in this position today without them. </p> <br>
+            <p> Please feel free to navigate through my website, I hope you enjoy it !! I have experience with various tech platforms like Microsoft Excel and Google sheets, along with a growing passion in coding in different programming and markup languages like Python and HTML. While I got you here, be sure to say get in touch and say hi or connect with me on LinkedIn, especially if you love tech !!!</p> <br>
+        </div>
+
+    </div>
+    
+    <h3 class="h3">Me in action!!! Click on an image to see more from that day</h3>
+    
+   
+        <div class="flex2">
+
+            <div class="f2r1">
+                <a href="../../projectdeliverables/projectHTML/portlandpictures.html"><img class="ncore" src="../../images/mencore.jpg" alt="ncore" width="300"></a>
+                <p>When I represented Syracuse University and our HEOP program <br>at the annual NCORE conference in Portland, Oregon. </p>
+            </div>
+
+            <div class="f2r2">
+                <a href="../../projectdeliverables/projectHTML/graduationpictures.html"><img class="family" src="../../images/Family.jpg" alt="family" width="300"></a>
+                <p>When I was blessed to have had both of my older siblings graduate from <br> their under/post institutions this past summer. </p>
+            </div>
+
+            <div class="f2r3"> 
+                <a href="../projectHTML/asupictures.html"><img class="ball" src="../../images/basketball.jpg" alt="basketball" width="300"></a>
+                <p>In September of 2022,  my team won ASU's annual <br> 5v5 Basketball Tournament.</p>
+            </div>
+
+        </div>
+   
+
+    <div class="linkbox"> 
+
+        <div class="git"> 
+            <button class="button1" type="button" href="../../lab11/contact.html"> Get In Touch!</button> 
+        </div>
+
+        <div class="gmail">
+            <a href="mailto:darosari@syr.edu"> <img width="70" src="../../images/download.jpeg" alt="gmail logo"></a>
+        </div>
+
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/rosariodawryn/"><img alt="linked in logo" src="../../images/logo.png"></a>
+        </div>
+
+    </div>
+
+<footer> 
+    <hr>
+    
+    <div class="quotetm">
+        <div class="tm"> <p>&copy; 2022</p></div>
+        <div class="quote"> <p> "You can keep going or you can quit. Either way hurts, it is up to you to choose which type of hurt you want to face."</p></div>
+    </div>
+
+        <div class="container">
+
+            <form action="https://formspree.io/f/meqdggra" method="post">
+    
+                <div class="formrow1">
+                    <div class="labels">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+                    </div>
+                </div>
+                        
+                <div class="formrow2">
+                    <div class="labels">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                </div>
+                        
+                <div class="formrow3">
+                    <div class="labels">
+                        <label for="country">Country</label>
+                    </div>
+
+                    <div class="inputs">
+                        <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="formrow4">
+                    <div class="labels">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="inputs">
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    </div>
+                </div>
+    
+                <div class="formrow5">
+                    <input type="submit" value="Submit">
+                </div>
+    
+            </form>
+        </div>
+</footer>
+</body>
+
+</html>
