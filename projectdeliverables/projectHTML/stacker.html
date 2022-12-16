@@ -6,31 +6,188 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black Lives Matter</title>
-</head>
-<style>
-    body {
-        background-color: #000000;
-        color: #ffffff;
-    }
-    .navi {
-        float: right;
-        padding: 10px ;
-        flex: 1;
-        order: 1;
-        background-color: #ffffff;
-        border: #000000;
-        border-radius: 10em;
-        color: #ffffff;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        margin: auto;
-    }
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/blmfist.png">
+    <link rel="stylesheet" href="../projectHTML/skeleton-ss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+    <title>Stacker</title>
+    <style>
+        .mqflex1 {
+            background-color: #252478;
+        }
+        body {
+            background-color: #252478;
+            color: #eeeefc;
+        }
+    
+        .navi {
+            background-color: #eeeefc;
+            border: 1em solid #7f80c7;
+        }
 
-    nav a:link {color:#000000;} /*to style links to unvisited pages*/
-    nav a:visited {color: #73006f;}
-    nav a:hover {background-color: #eccaca ;}
-</style>
+        .flex1, .flex2, .flex3 {
+            border: 1em solid #7f80c7;
+            background-color: #eeeefc;
+            margin: 100px;
+            display: flex;
+            flex: 1;
+            border-radius: 10em;
+            border: 1em solid #7f80c7;
+            padding: 10px;
+            background-color: #eeeefc;
+            color: #252478;
+            flex-wrap: wrap;
+            justify-content: space-around;  
+        }
+
+        .f1r2 {
+            background-color: #eeeefc;
+            color: #252478;
+            font-size: larger;
+            display: flex;
+            margin: 50px;
+            border-radius: 1em;
+            padding: 10px;
+            flex-wrap: wrap;
+            flex: 2;
+            justify-content: center;
+            align-content: center;
+        }
+        .f2r1, .f2r2 {
+            background-color: #eeeefc;
+            color: #252478;
+            font-size: larger;
+            display: flex;
+            margin: 50px;
+            border-radius: 1em;
+            padding: 10px;
+            flex-wrap: wrap;
+            flex: 2;
+            justify-content: center;
+            align-content: center;
+        }
+    
+        .f3r1, .f3r2, .f3r3, .f2r1, .f2r2, .f2r3 {
+            color: #252478;
+            text-align: center;
+            font-family: 'Oleo Script Swash Caps', cursive;;
+        }
+        
+       
+        nav a:link {color:#252478;} /*to style links to unvisited pages*/
+        nav a:visited {color: #252478;} /*to style link color text after user has clicked it*/
+        nav a:hover {
+            color:#eeeefc;
+            background-color: #252478;
+            border-radius: 10px;
+        } /*to style hover when user hovers over a clickable link*/
+       
+        .quotetm {
+            color: #eeeefc;
+        }
+
+        .container {
+            border: 1em solid #7f80c7;
+            background-color: #eeeefc;
+            color:#252478
+        }
+        input[type=submit] {
+            background-color: #7f80c7;
+            color:#eeeefc;
+        }
+        #stacker {
+            width: 728px;
+            background-color: #eeeefc;
+        }
+       .labels {
+        color: #252478;
+       }
+       @media screen and (max-width: 600px) {
+            .h1{
+                font-size: .75em;
+            }
+            .flex2{
+                padding: 125px;
+            }
+
+            .f2r2 p {
+                color: #252478;
+            }
+            .flex1 a {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+            .flex1, .flex2, .flex3 {
+                display: flex;
+                padding: 20px;
+            }
+            .f1r2 p, .f2r2 p, .f3r1 p {
+                color: #252478;
+            }
+           
+            .quotetm {
+                color: #eeeefc;
+            }
+            /* .f3r1, .f3r2, .f3r3 {
+                margin-left: 10%;
+                max-width: 200%;
+            } */
+            .flex3 {
+                padding: 50px;
+            }
+          
+            .labels, .inputs, input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+            }
+            .row1, .row2 {
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            .img {
+                border-radius: 25%;
+                flex-direction: column;
+                flex-wrap: wrap;
+                height: auto;
+                width: 100%;
+                max-width: 400px;
+            }
+            nav a {
+                display: block;
+                padding: 10px;
+            }
+            .navi {
+                background-color: #c1c1c18e;
+
+            }
+            .navi a:hover {
+                color: #252478;
+            }
+            body {
+            background-color:#c1c1c18e;
+            color: #252478;
+            background-image: url("../../images/milky-way-2695569__480.jpeg");
+            }
+
+            
+            .f1r1 {margin: 25px;}
+            /* .f1r2 {margin: 25px;} */
+            #dawryn, .h3{
+                color:#000000;
+                font-family: 'Oleo Script Swash Caps', cursive;
+            }
+            .span, .spann {display: none;}
+            .links {float:left;}
+            .addy, .links {flex: 1}
+            #dawryn {font-size:1em;}
+        }
+    
+    </style>
+
+
+</head>
+
 
 <body>
     <nav class="navi">
@@ -39,43 +196,173 @@
         <a href="../projectHTML/mbm.html">More About Me</a>
     </nav>
 
-    <h1>Stacker + My Projects</h1>
-    <p>
-        This past summer I had the opportunity to intern at Stacker. Stacker is a journalism company dedicated to offering maximum resources to freelanced editors and authors. They are based on a skilled and creative newsroom that unites thinkers and storytellers from traditional media to highlight and tackle age-old industry difficulties, such as imagining a new way for businesses to ethically contribute to a tradition of trustworthy journalism.
-        We publish hundreds and thousands of automated stories regarding gas prices and unemployment rate around America, to even the smallest detailed like pets available for adoption in some random county in Texas. We publish local and national stories, random stories, and significant stories. 
-    </p>
-    <img src="../../images/Stacker.png" alt="Stacker logo" width="600" height="200">
+    <h1> <a class="h1" href="../projectHTML/stacker.html">Stacker</a> </h1>
 
+    
+    <!-- <div class="stack">
+        <div>
+            <img id="stacker" class="stack" src="../../images/Stacker.png" alt="Stacker logo">
+        </div>
+    </div> -->
+   
+    
 
+    <div class="flex1">
+        <div class="f1r2">
+            <p>
+                This past summer I had the opportunity to intern at Stacker. Stacker is a journalism company dedicated to offering maximum resources to freelanced editors and authors. They are based on a skilled and creative newsroom that unites thinkers and storytellers from traditional media to highlight and tackle age-old industry difficulties, such as imagining a new way for businesses to ethically contribute to a tradition of trustworthy journalism.
+                We publish hundreds and thousands of automated stories regarding gas prices and unemployment rate around America, to even the smallest detailed like pets available for adoption in some random county in Texas. We publish local and national stories, random stories, and significant stories. 
+            </p>
+        </div>
+        <a href="https://stacker.com/"><img class="img" src="../../images/Stacker Homepage.png" alt="Stacker Homepage" width="550" height="300"></a> 
+        
+    </div>
     <hr>
     
-    <h2>Where do I come in? </h2>
-    <p>
-        I get the data for these editors and writers. I deal with thousands of lines of data, where I use different coding languages to simplify all that data, where editors and freelanced writers can make stories with the thousands of lines of data. I work on the local team as a data analyst intern. I work with google and excel sheets, as well as dealing with python, and HTML. I am majoring in Information Management & Technology, so this was a perfect opportunity for me to grow and expand my skillset, as well as network with other professionals in this field. Fortunately, I get to work with the material I am learning at school.
-    </p>
-    <img src="../../images/Stacker Homepage.png" alt="Stacker Homepage" width="550" height="300">
-    <p>
 
-        <hr>
-        <p> Here are a couple of projects that I worked on:
-            <ul>
-                <li> <a href="https://stacker.com/nevada/counties-most-concerned-about-climate-change-nevada"> Counties most concerned about climate change in Nevada </a> </li>
-                <li> <a href="https://stacker.com/hawaii/counties-highest-rate-food-insecure-children-hawaii">Counties with the highest rate of food insecurity in Hawaii</a></li>
-                <li> <a href="https://stacker.com/new-york/counties-highest-unemployment-rate-new-york">Counties with the highest unemployment rate in New York</a> </li>
-                <li> <a href="https://stacker.com/california/counties-oldest-homes-california">Counties with the oldest homes in California</a> </li>
-            </ul>
-        </p>
-        <img src="../../images/Screen Shot 2022-11-06 at 10.22.46 PM.png" alt="screenshot of code" width="200" height="200">
-    <img src="../../images/Screen Shot 2022-11-06 at 10.22.31 PM.png" alt="screenshot of code" width="200" height="200">
-    </p>
 
-    <footer> 
-        <hr>
-            <div class="quotetm">
-                <div class="tm"> <p>&copy; 2022</p></div>
-                <div class="quote"> <p> "You can keep going or you can quit. Either way hurts, it is up to you to choose which type of hurt you want to face."</p></div>
+    <div class="flex2">
+        
+        <div class="f2r3">
+            <h2>Where do I come in? </h2><br>
+
+            <p>
+                I get the data for these editors and writers. I deal with thousands of lines of data, where I use different coding languages to simplify all that data, where editors and freelanced writers can make stories with the thousands of lines of data. I work on the local team as a data analyst intern. I work with google and excel sheets, as well as dealing with python, and HTML. I am majoring in Information Management & Technology, so this was a perfect opportunity for me to grow and expand my skillset, as well as network with other professionals in this field. Fortunately, I get to work with the material I am learning at school.
+            </p>
+        </div>
+
+        <div class="f2r1">
+           <a href="../../images/Screen Shot 2022-11-06 at 10.22.31 PM.png"><img class="img" src="../../images/Screen Shot 2022-11-06 at 10.22.31 PM.png" alt="Google sheets code"></a> 
+        </div>
+
+        <div class="f2r2">
+            <a href="../../images/Screen Shot 2022-11-06 at 10.22.46 PM.png"><img class="img" src="../../images/Screen Shot 2022-11-06 at 10.22.46 PM.png" alt="Google sheets code"></a> 
+         </div>
+            
+    </div>
+    <hr>
+
+
+
+    <div class="flex3">
+        
+        <div class="f3r1">
+            <div>
+                <p> 
+                    Here are a couple of projects that I worked on; Click on any image to read about it
+                </p>
             </div>
-    </footer>
+            
+            <div class="f3r2">
+                <a href="https://stacker.com/nevada/counties-most-concerned-about-climate-change-nevada"> <img class="img" src="../images/climate.png" alt="downtown Nevada"> </a> </li>
+                <a href="https://stacker.com/hawaii/counties-highest-rate-food-insecure-children-hawaii"> <img class="img" src="../images/food-insecure.png" alt="beach in Hawaii"> </a></li>
+            </div>
+            <div></div>
 
+            <div class="f3r3">
+                <a href="https://stacker.com/new-york/counties-highest-unemployment-rate-new-york"> <img class="img" src="../images/UE.png" alt="overhead view of yankee stadium in new york"> </a> </li>
+                <a href="https://stacker.com/california/counties-oldest-homes-california"> <img class="img" src="../images/oldest.png" alt="buildings in California"> </a> </li>
+            </div>
+        </div>
+
+    </div>
+        
+
+    <div class="linkbox"> 
+
+        <!-- <div class="git"> 
+            <button class="button1" type="button" href="../../lab11/contact.html"> Get In Touch!</button> 
+        </div> -->
+
+        <div class="gmail">
+            <a href="mailto:darosari@syr.edu"> <img width="70" src="../../images/download.jpeg" alt="gmail logo"></a>
+        </div>
+
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/rosariodawryn/"><img alt="linked in logo" src="../../images/logo.png"></a>
+        </div>
+
+    </div>
+
+
+
+<!-- FOR MEDIA QUERIES !!!!! -->
+<!-- <div class="mqflex1">
+    <div class="mqf1r1"> 
+        <p>
+            Outside of school and work, I am a very fun person !! I love to play basketball competitively, and I play club basketball at Syracuse University. My love for basketball started when I was in middle school and grew into a grind in high school. I played at Cardinal Hayes Highschool in the Bronx, and I learned how competitive the game could be once you stepped out of your neighborhood. Now, I like to see myself as the best basketball player I have ever been, and every day I am reminded of my love for the grind.
+        </p>
+    </div>
+
+    <div class="mqf1r2"> 
+        <img class="img" src="../../images/crowdbg.JPG" alt="crowd in the background" width="200" height="200">
+        <img class="img" src="../../images/triple threat.JPG" alt="triple threat" width="200" height="200">        
+    </div>
+</div>
+ -->
+
+
+
+<footer> 
+    <hr>
+    
+    <div class="quotetm">
+        <div class="tm"> <p>&copy; 2022</p></div>
+        <div class="quote"> <p> "Without rain, nothing grows. Learn to embrace the storm in life."</p></div>
+    </div>
+
+        <div class="container">
+
+            <form action="https://formspree.io/f/meqdggra" method="post">
+    
+                <div class="formrow1">
+                    <div class="labels">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+                    </div>
+                </div>
+                        
+                <div class="formrow2">
+                    <div class="labels">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                </div>
+                        
+                <div class="formrow3">
+                    <div class="labels">
+                        <label for="country">Country</label>
+                    </div>
+
+                    <div class="inputs">
+                        <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="formrow4">
+                    <div class="labels">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="inputs">
+                        <textarea id="subject" name="subject" placeholder="Leave any advice/crticism about the website. Thank you for visiting!!!" style="height:200px"></textarea>
+                    </div>
+                </div>
+    
+                <div class="formrow5">
+                    <input type="submit" value="Submit">
+                </div>
+    
+            </form>
+        </div>
+</footer>
 </body>
+
 </html>
