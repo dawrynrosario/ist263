@@ -1,364 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="../../images/blmfist.png">
-    <link rel="stylesheet" href="../projectHTML/skeleton-ss.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
-    <title>More About Me</title>
-    <style>
-        body {
-            background-color: #000000;
-            color: #ffffff;
-            background-image: url("../../images/milky-way-2695569__480.jpeg");
-            /* background-size:cover */
-        }
-
-        .flex1, .flex2, .flex3 {
-            border: 1em solid #7f80c7;
-            background-color: #eeeefc;
-            margin: 100px;
-            display: flex;
-            flex: 1;
-            border-radius: 10em;
-            border: 1em solid #000000;
-            padding: 10px;
-            color: #ffffff;
-            flex-wrap: wrap;
-            justify-content: space-around;  
-        }
-
-        .flex2, .flex3 {
-            flex-direction: column;
-        }
-
-        .f1r1, .f1r2 {
-            color: #000000;
-            background-color: #eeeefc;
-            font-size: larger;
-            display: flex;
-            margin: 50px;
-            border-radius: 1em;
-            padding: 10px;
-            flex-wrap: wrap;
-            flex: 2;
-            justify-content: center;
-            align-content: center;
-            
-        }
-        .f2r1, .f2r2 {
-            /* background-color: #eeeefc; */
-            color:#000000;
-            background-color: #eeeefc;
-            /* color: #252478; */
-            /* font-size: larger; */
-            /* display: flex; */
-            margin: 50px;
-            /* border-radius: 1em; */
-            padding: 10px;
-            /* flex-wrap: wrap; */
-            /* flex: 2; */
-            /* justify-content: center; */
-            /* align-content: center; */
-        }
-
-        .flex3 {
-            color:#252478;
-            padding: 35px
-        }
-        .flex2{
-            padding: 1px;
-        }
-        .f3r1 {
-            color:#000000
-        }
-      
-        nav a:link {color:#73006f;} /*to style links to unvisited pages*/
-        nav a:visited {color: #000000;} /*to style link color text after user has clicked it*/
-        nav a:hover {background-color: #030225; color: #ffffff; border-radius: 10px;} /*to style hover when user hovers over a clickable link*/
-
-        .container{
-            border: 10px solid #eeeefc;
-        }
-        @media screen and (max-width: 600px) {
-
-            .flex1 {
-                display: none;
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/x-icon" href="../../images/blmfist.png">
+        <link rel="stylesheet" href="../projectHTML/skeleton-ss.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+        <title>More About Me</title>
+        <style>
+            body {
+                background-color: #000000;
+                color: #ffffff;
+                background-image: url("../../images/milky-way-2695569__480.jpeg");
+                /* background-size:cover */
             }
-            .h1 {
-                font-size: .75em;
-            }
+
             .flex1, .flex2, .flex3 {
-                border-radius: 10em;
-                border: 10px solid #000000;
-                padding: 5em;
-                background-color: #000000;
-                color: #ffffff;
+                border: 1em solid #7f80c7;
+                background-color: #eeeefc;
                 margin: 100px;
                 display: flex;
-                flex-wrap: wrap;
-                
-            }
-
-            .flr1, .f1r2, .f1r3 {
-                background-color: #eeeefc;
+                flex: 1;
                 border-radius: 10em;
-                border: 10px solid #000000;
-                padding: 1em;
-                background-color: #000000;
-                color: #ffffff;
-                /* margin: 100px; */
-                display: flex;
-                flex-wrap: wrap;
-                
-            }
-
-            .f2r1,.f2r2,.f2r3 {
-                background-color: #eeeefc;
-                border-radius: 10em;
-                border: 10px solid #000000;
-                /* padding: 1em; */
-                background-color: #000000;
-                color: #ffffff;
-                /* margin: 100px; */
-                display: flex;
-                flex-wrap: wrap;
-                
-                float: left;
-            }
-
-            .f3r1, .f3r2, .f3r3 {
-                background-color: #eeeefc;
-                border-radius: 10em;
-                border: 10px solid #000000;
-                padding: 1em;
-                background-color: #000000;
-                color: #ffffff;
-                margin: 100px;
-                display: flex;
-                flex-wrap: wrap;
-
-                float: left;
-            }
-
-            .f2r2 {
-                margin: 100px;
-            }
-
-
-            .img {
-                max-width: 100%;  
-                border-radius: 15%;
-                /* flex-direction: column; */
-                /* flex-wrap: wrap; */
-                height: auto;
-                width: 100%;
-                /* max-width: 400px;  */
-                /* margin: 2EM; */
-                float: left;
-                padding: 2em;
-                object-fit: cover;
-                /* overflow: hidden; */
-                position: relative;
-
-            }
-
-
-
-
-            
-
-            .labels, .inputs, input[type=submit] {
-            width: 100%;
-            margin-top: 0;
-            }
-            .row1, .row2 {
-                flex-direction: column;
-                flex-wrap: wrap;
-            }
-            .image, .ncore, .family, .ball {
-                border-radius: 50%;
-                flex-direction: column;
-                flex-wrap: wrap;
-                height: auto;
-                width: 100%;
-                max-width: 400px;
-            }
-            nav a {
-                display: block;
+                border: 1em solid #000000;
                 padding: 10px;
                 color: #ffffff;
-            }
-            .navi {
-                background-color: #c1c1c18e;
-
-            }
-            body {
-            background-color:#c1c1c18e;
-            color:#ffffff;
+                flex-wrap: wrap;
+                justify-content: space-around;  
             }
 
-            p {color:#ffffff;}
-            .f1r1 {margin: 25px;}
-            /* .f1r2 {margin: 25px;} */
-            #dawryn, .h3, .quotetm p {
+            .flex2, .flex3 {
+                flex-direction: column;
+            }
+
+            .f1r1, .f1r2 {
+                color: #000000;
+                background-color: #eeeefc;
+                font-size: larger;
+                display: flex;
+                margin: 50px;
+                border-radius: 1em;
+                padding: 10px;
+                flex-wrap: wrap;
+                flex: 2;
+                justify-content: center;
+                align-content: center;
+                
+            }
+            .f2r1, .f2r2 {
+                /* background-color: #eeeefc; */
                 color:#000000;
-                font-family: 'Oleo Script Swash Caps', cursive;
+                background-color: #eeeefc;
+                /* color: #252478; */
+                /* font-size: larger; */
+                /* display: flex; */
+                margin: 50px;
+                /* border-radius: 1em; */
+                padding: 10px;
+                /* flex-wrap: wrap; */
+                /* flex: 2; */
+                /* justify-content: center; */
+                /* align-content: center; */
             }
-            .span, .spann {display: none;}
-            .links {float:left;}
-            .addy, .links {flex: 1}
-            #dawryn {font-size:1em;}
-    }
 
-    </style>
-</head>
-
-
-<body>
-    <nav class="navi">
-        <a href="../projectHTML/index.html">Home</a> <span class="span">|</span>
-        <a href="../projectHTML/stacker.html">Stacker</a> <span class="spann">|</span>
-        <a href="../projectHTML/mbm.html">More About Me</a>
-    </nav>
-    
-
-    <h1> <a class="h1" href="../projectHTML/mbm.html">More About Me</a> </h1>
-    <!-- <h1 class="h1" href="../projectHTML/mbm.html">More About Me</h1> -->
-
-    <div class="flex1">
-        <div class="f1r2">
-            <p>
-                Outside of school and work, I am a very fun person !! I love to play basketball competitively, and I play club basketball at Syracuse University. My love for basketball started when I was in middle school and grew into a grind in high school. I played at Cardinal Hayes Highschool in the Bronx, and I learned how competitive the game could be once you stepped out of your neighborhood. Now, I like to see myself as the best basketball player I have ever been, and every day I am reminded of my love for the grind.
-            </p>
-        </div>
-    <img class="img" src="../../images/crowdbg.JPG" alt="crowd in the background" width="200" height="200">
-    <img class="img" src="../../images/triple-threat.JPG" alt="triple threat" width="200" height="200">
-    
-    </div>
-    <hr>
-
-    
-    <div class="flex2">
-    
-        <div class="f2r2">
-            <p>
-                <strong> Meet Benjamin !!!</strong> <br> <br>
-            </p>
-            <p>
-                This is Benji ! He's 3 years old and he is a Toy Poodle. The closest thing to a little brother that I have ever had, Benji has been with my family since the COVID pandemic (2020). He got us through the tough times, and all of the days and nights that were lost due to COVID doesn't seem so bad when I remember that Benji was there with us.
-            </p>
-            
-        </div>
-
-        <div class="f2r1">
-            <img class="img" src="../images/IMG_4563.JPG" alt="cute puppy" width="200" height="200">
-            <img class="img" src="../images/IMG_5760.jpeg" alt="same puppy" width="200" height="200">
-            <img class="img" src="../images/IMG_5803.jpeg" alt="same puppy different angle" width="200" height="200">
-            <img class="img" src="../images/68641970155__0EF86CC7-AFEE-4C3B-97F0-A2BD973634DB.jpeg" alt="puppy" width="200" height="200" > 
-        </div>
-
-    </div>
-    <hr>
-
-    <div class="flex3">
+            .flex3 {
+                color:#252478;
+                padding: 35px
+            }
+            .flex2{
+                padding: 1px;
+            }
+            .f3r1 {
+                color:#000000
+            }
         
-        <div class="f3r1">
-            <p>
-                I am happy to share that I am also a barber and have gotten into cutting hair. I have been practicing and learning gradually since the COVID-19 pandemic, and I am confident enough to expand my clientele. I currently work within the Syracuse community, mainly Syracuse students but I am still open to accept anyone. In trying to expand my clientele, I wanted to be different than other barbers and understand my clients and build trust with them, which lead me to decide that the first haircut for a new client will be free. I decided on this and wanted it to serve as an attempt to remind my client that they have options, and if I am not one of them that’s totally fine.  
-            </p>
-        </div>
+            nav a:link {color:#73006f;} /*to style links to unvisited pages*/
+            nav a:visited {color: #000000;} /*to style link color text after user has clicked it*/
+            nav a:hover {background-color: #030225; color: #ffffff; border-radius: 10px;} /*to style hover when user hovers over a clickable link*/
 
-        <div>
-    <img class="img" src="../../images/barbero.png" alt="barber" width="200" height="200">
-    <img class="img" src="../../images/barberoo.png" alt="barberr" width="200" height="200" > 
-        </div>
+            .container{
+                border: 10px solid #eeeefc;
+            }
+            @media screen and (max-width: 600px) {
 
-    </div>
-
-    <div class="linkbox"> 
-
-        <!-- <div class="git"> 
-            <button class="button1" type="button" href="../../lab11/contact.html"> Get In Touch!</button> 
-        </div> -->
-    
-        <div class="gmail">
-            <a href="mailto:darosari@syr.edu"> <img width="70" src="../../images/download.jpeg" alt="gmail logo"></a>
-        </div>
-    
-        <div class="linkedin">
-            <a href="https://www.linkedin.com/in/rosariodawryn/"><img alt="linked in logo" src="../../images/logo.png"></a>
-        </div>
-    
-    </div>
-
-</body>
-
-
-
-<footer> 
-    <hr>
-
-    <div class="quotetm">
-        <div class="tm"> <p>&copy; 2022</p></div>
-        <div class="quote"> <p> "Without rain, nothing grows. Learn to embrace the storm in life."</p></div>
-    </div>
-
-    <div class="container">
-
-        <form action="https://formspree.io/f/meqdggra" method="post">
-
-            <div class="formrow1">
-                <div class="labels">
-                    <label for="fname">First Name</label>
-                </div>
-                <div class="inputs">
-                    <input type="text" id="fname" name="firstname" placeholder="Your first name..">
-                </div>
-            </div>
+                .flex1 {
+                    display: none;
+                }
+                .h1 {
+                    font-size: .75em;
+                }
+                .flex1, .flex2, .flex3 {
+                    border-radius: 10em;
+                    border: 10px solid #000000;
+                    padding: 5em;
+                    background-color: #000000;
+                    color: #ffffff;
+                    margin: 100px;
+                    display: flex;
+                    flex-wrap: wrap;
                     
-            <div class="formrow2">
-                <div class="labels">
-                    <label for="lname">Last Name</label>
-                </div>
-                <div class="inputs">
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                </div>
-            </div>
+                }
+
+                .flr1, .f1r2, .f1r3 {
+                    background-color: #eeeefc;
+                    border-radius: 10em;
+                    border: 10px solid #000000;
+                    padding: 1em;
+                    background-color: #000000;
+                    color: #ffffff;
+                    /* margin: 100px; */
+                    display: flex;
+                    flex-wrap: wrap;
                     
-            <div class="formrow3">
-                <div class="labels">
-                    <label for="country">Country</label>
-                </div>
+                }
 
-                <div class="inputs">
-                    <select id="country" name="country">
-                        <option value="australia">Australia</option>
-                        <option value="canada">Canada</option>
-                        <option value="usa">USA</option>
-                    </select>
-                </div>
+                .f2r1,.f2r2,.f2r3 {
+                    background-color: #eeeefc;
+                    border-radius: 10em;
+                    border: 10px solid #000000;
+                    /* padding: 1em; */
+                    background-color: #000000;
+                    color: #ffffff;
+                    /* margin: 100px; */
+                    display: flex;
+                    flex-wrap: wrap;
+                    
+                    float: left;
+                }
+
+                .f3r1, .f3r2, .f3r3 {
+                    background-color: #eeeefc;
+                    border-radius: 10em;
+                    border: 10px solid #000000;
+                    padding: 1em;
+                    background-color: #000000;
+                    color: #ffffff;
+                    margin: 100px;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    float: left;
+                }
+
+                .f2r2 {
+                    margin: 100px;
+                }
+
+
+                .img {
+                    /* max-width: 100%;  
+                    border-radius: 15%;
+                    /* flex-direction: column; */
+                    /* flex-wrap: wrap; */
+                    /* height: auto; */
+                    /* width: 100%; */
+                    /* max-width: 400px;  */
+                    /* margin: 2EM; */
+                    /* float: left; */
+                    /* padding: 2em; */
+                    /* object-fit: cover; */
+                    /* overflow: hidden; */
+                    /* position: relative; */
+                    /* margin: 2EM; */
+                    float: left;
+                    padding: 2em;
+                    object-fit: cover;
+                    /* overflow: hidden; */
+                    position: relative;
+                    width: 100%;
+                    height: auto;
+                }
+
+
+
+
+                
+
+                .labels, .inputs, input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+                }
+                .row1, .row2 {
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+                .image, .ncore, .family, .ball {
+                    border-radius: 50%;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    height: auto;
+                    width: 100%;
+                    max-width: 400px;
+                }
+                nav a {
+                    display: block;
+                    padding: 10px;
+                    color: #ffffff;
+                }
+                .navi {
+                    background-color: #c1c1c18e;
+
+                }
+                body {
+                background-color:#c1c1c18e;
+                color:#ffffff;
+                }
+
+                p {color:#ffffff;}
+                .f1r1 {margin: 25px;}
+                /* .f1r2 {margin: 25px;} */
+                #dawryn, .h3, .quotetm p {
+                    color:#000000;
+                    font-family: 'Oleo Script Swash Caps', cursive;
+                }
+                .span, .spann {display: none;}
+                .links {float:left;}
+                .addy, .links {flex: 1}
+                #dawryn {font-size:1em;}
+        }
+
+        </style>
+    </head>
+
+
+    <body>
+        <nav class="navi">
+            <a href="../projectHTML/index.html">Home</a> <span class="span">|</span>
+            <a href="../projectHTML/stacker.html">Stacker</a> <span class="spann">|</span>
+            <a href="../projectHTML/mbm.html">More About Me</a>
+        </nav>
+        
+
+        <h1> <a class="h1" href="../projectHTML/mbm.html">More About Me</a> </h1>
+        <!-- <h1 class="h1" href="../projectHTML/mbm.html">More About Me</h1> -->
+
+        <div class="flex1">
+            <div class="f1r2">
+                <p>
+                    Outside of school and work, I am a very fun person !! I love to play basketball competitively, and I play club basketball at Syracuse University. My love for basketball started when I was in middle school and grew into a grind in high school. I played at Cardinal Hayes Highschool in the Bronx, and I learned how competitive the game could be once you stepped out of your neighborhood. Now, I like to see myself as the best basketball player I have ever been, and every day I am reminded of my love for the grind.
+                </p>
+            </div>
+        <img class="img" src="../../images/crowdbg.JPG" alt="crowd in the background" >
+        <img class="img" src="../../images/triple-threat.JPG" alt="triple threat">
+        
+        </div>
+        <hr>
+
+        
+        <div class="flex2">
+        
+            <div class="f2r2">
+                <p>
+                    <strong> Meet Benjamin !!!</strong> <br> <br>
+                </p>
+                <p>
+                    This is Benji ! He's 3 years old and he is a Toy Poodle. The closest thing to a little brother that I have ever had, Benji has been with my family since the COVID pandemic (2020). He got us through the tough times, and all of the days and nights that were lost due to COVID doesn't seem so bad when I remember that Benji was there with us.
+                </p>
+                
             </div>
 
-            <div class="formrow4">
-                <div class="labels">
-                    <label for="subject">Subject</label>
-                </div>
-                <div class="inputs">
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                </div>
+            <div class="f2r1">
+                <img class="img" src="../images/IMG_4563.JPG" alt="cute puppy" width="200" height="200">
+                <img class="img" src="../images/IMG_5760.jpeg" alt="same puppy" width="200" height="200">
+                <img class="img" src="../images/IMG_5803.jpeg" alt="same puppy different angle" width="200" height="200">
+                <img class="img" src="../images/68641970155__0EF86CC7-AFEE-4C3B-97F0-A2BD973634DB.jpeg" alt="puppy" width="200" height="200" > 
             </div>
 
-            <div class="formrow5">
-                <input type="submit" value="Submit">
+        </div>
+        <hr>
+
+        <div class="flex3">
+            
+            <div class="f3r1">
+                <p>
+                    I am happy to share that I am also a barber and have gotten into cutting hair. I have been practicing and learning gradually since the COVID-19 pandemic, and I am confident enough to expand my clientele. I currently work within the Syracuse community, mainly Syracuse students but I am still open to accept anyone. In trying to expand my clientele, I wanted to be different than other barbers and understand my clients and build trust with them, which lead me to decide that the first haircut for a new client will be free. I decided on this and wanted it to serve as an attempt to remind my client that they have options, and if I am not one of them that’s totally fine.  
+                </p>
             </div>
 
-        </form>
-    </div>
-</footer>
-</body>
+            <div>
+        <img class="img" src="../../images/barbero.png" alt="barber" width="200" height="200">
+        <img class="img" src="../../images/barberoo.png" alt="barberr" width="200" height="200" > 
+            </div>
+
+        </div>
+
+        <div class="linkbox"> 
+
+            <!-- <div class="git"> 
+                <button class="button1" type="button" href="../../lab11/contact.html"> Get In Touch!</button> 
+            </div> -->
+        
+            <div class="gmail">
+                <a href="mailto:darosari@syr.edu"> <img width="70" src="../../images/download.jpeg" alt="gmail logo"></a>
+            </div>
+        
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/rosariodawryn/"><img alt="linked in logo" src="../../images/logo.png"></a>
+            </div>
+        
+        </div>
+
+    
+
+
+
+        <footer> 
+            <hr>
+
+            <div class="quotetm">
+                <div class="tm"> <p>&copy; 2022</p></div>
+                <div class="quote"> <p> "Without rain, nothing grows. Learn to embrace the storm in life."</p></div>
+            </div>
+
+            <div class="container">
+
+                <form action="https://formspree.io/f/meqdggra" method="post">
+
+                    <div class="formrow1">
+                        <div class="labels">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="inputs">
+                            <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+                        </div>
+                    </div>
+                            
+                    <div class="formrow2">
+                        <div class="labels">
+                            <label for="lname">Last Name</label>
+                        </div>
+                        <div class="inputs">
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                    </div>
+                            
+                    <div class="formrow3">
+                        <div class="labels">
+                            <label for="country">Country</label>
+                        </div>
+
+                        <div class="inputs">
+                            <select id="country" name="country">
+                                <option value="australia">Australia</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="formrow4">
+                        <div class="labels">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="inputs">
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="formrow5">
+                        <input type="submit" value="Submit">
+                    </div>
+
+                </form>
+            </div>
+        </footer>
+    </body>
 
 </html>
